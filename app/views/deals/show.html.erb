@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @deal.title %>
+</p>
+
+<p>
+  <strong>Sub title:</strong>
+  <%= @deal.sub_title %>
+</p>
+
+<p>
+  <strong>Deal type:</strong>
+  <%= @deal.deal_type %>
+</p>
+
+<p>
+  <strong>Selling price:</strong>
+  <%= @deal.selling_price %>
+</p>
+
+<p>
+  <strong>Voucher amt:</strong>
+  <%= @deal.voucher_amt %>
+</p>
+
+<p>
+  <strong>Offer percent:</strong>
+  <%= @deal.offer_percent %>
+</p>
+
+<p>
+  <strong>Validity date:</strong>
+  <%= @deal.validity_date %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @deal.city %>
+</p>
+
+<p>
+  <strong>Redeem addr:</strong>
+  <%= @deal.redeem_addr %>
+</p>
+
+<p>
+  <strong>No menu:</strong>
+  <%= @deal.no_menu %>
+</p>
+
+<p>
+  <strong>Main img:</strong>
+  <%= @deal.main_img %>
+</p>
+
+<p>
+  <strong>Sub img1:</strong>
+  <%= @deal.sub_img1 %>
+</p>
+
+<p>
+  <strong>Sub img2:</strong>
+  <%= @deal.sub_img2 %>
+</p>
+
+<p>
+  <strong>Sub img3:</strong>
+  <%= @deal.sub_img3 %>
+</p>
+
+<p>
+  <strong>Terms cond:</strong>
+  <%= @deal.terms_cond %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @deal.status %>
+</p>
+
+<%= link_to 'Edit', edit_deal_path(@deal) %> |
+<%= link_to 'Back', deals_path %>

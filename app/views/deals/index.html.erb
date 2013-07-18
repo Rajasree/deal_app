@@ -1,0 +1,57 @@
+<h1>Listing deals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Sub title</th>
+      <th>Deal type</th>
+      <th>Selling price</th>
+      <th>Voucher amt</th>
+      <th>Offer percent</th>
+      <th>Validity date</th>
+      <th>City</th>
+      <th>Redeem addr</th>
+      <th>No menu</th>
+      <th>Main img</th>
+      <th>Sub img1</th>
+      <th>Sub img2</th>
+      <th>Sub img3</th>
+      <th>Terms cond</th>
+      <th>Status</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @deals.each do |deal| %>
+      <tr>
+        <td><%= deal.title %></td>
+        <td><%= deal.sub_title %></td>
+        <td><%= deal.deal_type %></td>
+        <td><%= deal.selling_price %></td>
+        <td><%= deal.voucher_amt %></td>
+        <td><%= deal.offer_percent %></td>
+        <td><%= deal.validity_date %></td>
+        <td><%= deal.city %></td>
+        <td><%= deal.redeem_addr %></td>
+        <td><%= deal.no_menu %></td>
+        <td><%= deal.main_img %></td>
+        <td><%= deal.sub_img1 %></td>
+        <td><%= deal.sub_img2 %></td>
+        <td><%= deal.sub_img3 %></td>
+        <td><%= deal.terms_cond %></td>
+        <td><%= deal.status %></td>
+        <td><%= link_to 'Show', deal %></td>
+        <td><%= link_to 'Edit', edit_deal_path(deal) %></td>
+        <td><%= link_to 'Destroy', deal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Deal', new_deal_path %>
